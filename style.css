@@ -10,3 +10,73 @@ body {
 }
 
 /* Add styles here! */
+
+html {
+    --primary: hsl(160, 100%, 30%);
+    --secondary: hsl(45, 100%, 50%);
+    --secondary-darker: hsl(45, 100%, 40%);
+
+    --white: hsl(0, 100%, 100%);
+    --light-grey: hsl(0, 0%, 60%);
+    --medium-grey: hsl(0, 0%, 40%);
+    --dark-grey: hsl(0, 0%, 30%);
+    --very-dark-grey: hsl(0, 0%, 10%);
+    --black: hsl(0, 0%, 0%);
+}
+
+strong {
+    color: var(--primary);
+}
+
+.max-width-wrapper {
+    width: 100%;
+}
+
+header {
+    background-color: var(--white);
+    min-height: 25%;
+}
+
+main {
+    min-height: 75%;
+    background-color: var(--light-grey);
+    border-top: 8px solid var(--medium-grey);
+    padding-top: 64px;
+}
+
+.intro-chunk {
+    min-width: 200px;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 16px;
+    font-size: 1.25rem;
+    text-align: left;
+}
+
+.intro-chunk p {
+    max-width: 350px;
+}
+
+.title {
+    padding-bottom: 32px;
+    font-size: 1.75rem;
+}
+
+.card {
+    background-color: var(--white);
+    min-width: 200px;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 16px;
+    border-bottom: 8px solid var(--medium-grey);
+}
+
+.indented-heading {
+    background-color: var(--secondary);
+    border-bottom: 8px solid var(--secondary-darker);
+    padding: 16px 32px;
+    margin-left: -32px;
+    margin-top: -8px;
+    width: fit-content;
+    font-size: 1.25rem;
+}
